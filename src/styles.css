@@ -1,0 +1,42 @@
+.pink,
+label.pink {
+  color: #bd154d;
+  background-color: #f5a9d6;
+}
+
+#InfoBar.pink,
+input[type="radio"]:checked + label.pink,
+h2.pink {
+  color: #f5a9d6;
+  background-color: #bd154d;
+}
+
+.blue,
+label.blue {
+  color: #3597f2;
+  background-color: #a9dbf5;
+}
+
+#InfoBar.blue,
+input[type="radio"]:checked + label.blue,
+h2.blue {
+  color: #a9dbf5;
+  background-color: #3597f2;
+}
+
+.purple,
+label.purple {
+  color: #7e3cdb;
+  background-color: #b4a4de;
+}
+
+#InfoBar.purple,
+input[type="radio"]:checked + label.purple,
+h2.purple {
+  color: #b4a4de;
+  background-color: #7e3cdb;
+}
+
+:root {
+  background-color: #222222;
+}
