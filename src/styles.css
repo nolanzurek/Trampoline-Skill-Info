@@ -40,3 +40,8 @@ h2.purple {
 :root {
   background-color: #222222;
 }
+
+#routineSkillInformation,
+#individualRoutines {
+  background-color: none;
+}

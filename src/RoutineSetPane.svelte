@@ -23,7 +23,6 @@
     .flat()
     .map((el) => el.ddStringPermanent)
     .filter((el) => !"hf^(".includes(el));
-  console.log(totalSkillList);
 </script>
 
 <main>

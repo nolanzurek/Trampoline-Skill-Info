@@ -46,7 +46,7 @@
     <RoutineSetPane {skill} />
     <div id="spacer" />
     <div id="routineSkills">
-      <h2 class={colorClass}>Individual Routines</h2>
+      <h2 class="{colorClass} sectionTitle">Individual Routines</h2>
       {#each skill as skill}
         <RoutinePane {skill} />
       {/each}
@@ -55,7 +55,7 @@
     <RoutinePane {skill} />
     <div id="spacer" />
     <div id="routineSkills">
-      <h2 class={colorClass}>Individual Skill Information</h2>
+      <h2 class="{colorClass} sectionTitle">Individual Skill Information</h2>
       {#each skill as skill}
         <SkillPane {skill} />
       {/each}
