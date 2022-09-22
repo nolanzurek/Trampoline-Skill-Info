@@ -35,6 +35,8 @@ This information is found as follows:
 
 Note that there is no delineation between forwards and backwards flipping because they have the same degree of difficulty (with the exception of tumbling)
 
+![Example of FIG notation on the skill Font-full-half pike](FIG_explain.png)
+
 ### Tumbling Notation
 Notation for tumbling is slightly different:
 - The number of flips in a skill is not given; the number of flips is determined by the number of twist entries, which use the same system as the regular notation
