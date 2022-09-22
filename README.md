@@ -1,5 +1,5 @@
 # Trampoline DD Calculator
-Try it now at [ddcalc.net](ddcalc.net)!
+Try it now at [ddcalc.net](https://ddcalc.net)!
 
 ## Features
 - Calculates the degree of difficulty (DD) of trampoline, double-mini, and tumbling skills according to the [FIG 2022-2024 Code of Points](https://www.gymnastics.sport/publicdir/rules/files/en_TRA%20CoP%202022-2024.pdf)
