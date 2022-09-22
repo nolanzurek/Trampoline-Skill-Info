@@ -1,107 +1,52 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework and don't mind using pre-1.0 software — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+# Trampoline DD Calculator
+Try it now at [ddcalc.net](ddcalc.net)!
 
----
+## Features
+- Calculates the degree of difficulty (DD) of trampoline, double-mini, and tumbling skills according to the [FIG 2022-2024 Code of Points](https://www.gymnastics.sport/publicdir/rules/files/en_TRA%20CoP%202022-2024.pdf)
+- Calculates the degree of difficulty of routines
+- Can check if sets of routines are valid (do not contain duplicates)
 
-# svelte app
+## Usage
+### Single Skills
+Single skills can be entered by simply entering their string in [FIG Notation](#Fig-Notation)
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+### Routines
+Routines can be entered by entering multiple skills separated by spaces. Routine lengths are not checked, but each event has a standard number of skills per routine:
+- Trampoline: 10
+- Double-mini: 2
+- Tumbling: 8
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+### Routine sets
+Routines can be grouped into sets by enclosing each routine in curly braces `{}`. Routine sets may not contain duplicates.
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+## FIG Notation
+FIG Notation is a method of encoding trampoline gymnastics skills in a short string. A detailed description can be found [here](https://nightflyers.co.uk/wp/trampolining/tariff-judging/).
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+Put simply, a FIG Notation string encodes three pieces of information
+- The number of flips in the skill (measured in quarter flips)
+- The number of twists in the skill (measured in half-twists)
+- The position of the skill (either tuck (`o`), pike (`<`), or layout (`/`))
 
+This information is found as follows:
+- The first one (or possibly two) character in the string represent the number of quarter flips. These are often a multiple of 4
+- The last character represents the position
+- Each middle character represents the number of twists in one flip; if the skill contains multiple flips, there will be multiple numbers in the middle. The first number corresponds to the number of twists in the first flip, the second to the second, etc.
+  - If no twists are present in a given flip, a dash `-` is used
 
-## Get started
+Note that there is no delineation between forwards and backwards flipping because they have the same degree of difficulty (with the exception of tumbling)
 
-Install the dependencies...
+### Tumbling Notation
+Notation for tumbling is slightly different:
+- The number of flips in a skill is not given; the number of flips is determined by the number of twist entries, which use the same system as the regular notation
+- A period `.` can be used to indicate that the skill flips forward; otherwise, backward flipping is assumed. This delineation is made because forwards flipping skills on tumbling have higher DD than their backwards flipping counterparts.
 
-```bash
-cd svelte-app
-npm install
-```
+In addition, the tumbling event contains some skills that are not gracefully described by existing notation, so they are referred to by special symbols:
+- Roundoff: `(`
+- Back Handspring: `f`
+- Tempo (whip): `^`
+- Front Handspring: `h`
 
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+## TODO
+- Ensure that the results of floating point errors are not displayed without rounding
+- Fix style of subheaders in information pane
+- Add explanation of FIG notation into the site directly
