@@ -565,7 +565,7 @@ var app = (function () {
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "FigIN");
     			attr_dev(input0, "class", input0_class_value = "" + (null_to_empty(/*colorClass*/ ctx[2]) + " svelte-seovcc"));
-    			add_location(input0, file$4, 28, 4, 810);
+    			add_location(input0, file$4, 28, 4, 816);
     			input1.__value = "TRI";
     			input1.value = input1.__value;
     			attr_dev(input1, "type", "radio");
@@ -574,10 +574,10 @@ var app = (function () {
     			attr_dev(input1, "class", "radioElement svelte-seovcc");
     			input1.checked = true;
     			/*$$binding_groups*/ ctx[6][0].push(input1);
-    			add_location(input1, file$4, 35, 4, 950);
+    			add_location(input1, file$4, 35, 4, 956);
     			attr_dev(label0, "for", "TRI");
     			attr_dev(label0, "class", label0_class_value = "" + (null_to_empty(/*colorClass*/ ctx[2]) + " svelte-seovcc"));
-    			add_location(label0, file$4, 45, 4, 1148);
+    			add_location(label0, file$4, 45, 4, 1154);
     			input2.__value = "DMT";
     			input2.value = input2.__value;
     			attr_dev(input2, "type", "radio");
@@ -585,10 +585,10 @@ var app = (function () {
     			attr_dev(input2, "name", "event");
     			attr_dev(input2, "class", "radioElement svelte-seovcc");
     			/*$$binding_groups*/ ctx[6][0].push(input2);
-    			add_location(input2, file$4, 46, 4, 1201);
+    			add_location(input2, file$4, 46, 4, 1207);
     			attr_dev(label1, "for", "DMT");
     			attr_dev(label1, "class", label1_class_value = "" + (null_to_empty(/*colorClass*/ ctx[2]) + " svelte-seovcc"));
-    			add_location(label1, file$4, 55, 4, 1384);
+    			add_location(label1, file$4, 55, 4, 1390);
     			input3.__value = "TUM";
     			input3.value = input3.__value;
     			attr_dev(input3, "type", "radio");
@@ -596,14 +596,14 @@ var app = (function () {
     			attr_dev(input3, "name", "event");
     			attr_dev(input3, "class", "radioElement svelte-seovcc");
     			/*$$binding_groups*/ ctx[6][0].push(input3);
-    			add_location(input3, file$4, 56, 4, 1437);
+    			add_location(input3, file$4, 56, 4, 1443);
     			attr_dev(label2, "for", "TUM");
     			attr_dev(label2, "class", label2_class_value = "" + (null_to_empty(/*colorClass*/ ctx[2]) + " svelte-seovcc"));
-    			add_location(label2, file$4, 65, 4, 1620);
+    			add_location(label2, file$4, 65, 4, 1626);
     			attr_dev(div, "id", "inputDiv");
     			attr_dev(div, "class", "svelte-seovcc");
-    			add_location(div, file$4, 27, 2, 785);
-    			add_location(main, file$4, 26, 0, 775);
+    			add_location(div, file$4, 27, 2, 791);
+    			add_location(main, file$4, 26, 0, 781);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -759,6 +759,7 @@ var app = (function () {
 
     	$$self.$capture_state = () => ({
     		createEventDispatcher,
+    		text,
     		discipline,
     		disciplineToColor,
     		get: get_store_value,
@@ -2297,7 +2298,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (54:2) {:else}
+    // (63:2) {:else}
     function create_else_block(ctx) {
     	let routinepane;
     	let t0;
@@ -2344,12 +2345,12 @@ var app = (function () {
 
     			attr_dev(div0, "id", "spacer");
     			attr_dev(div0, "class", "svelte-upcgw1");
-    			add_location(div0, file, 55, 4, 1697);
+    			add_location(div0, file, 64, 4, 1904);
     			attr_dev(h2, "class", h2_class_value = "" + (/*colorClass*/ ctx[2] + " sectionTitle" + " svelte-upcgw1"));
-    			add_location(h2, file, 57, 6, 1752);
+    			add_location(h2, file, 66, 6, 1959);
     			attr_dev(div1, "id", "routineSkills");
     			attr_dev(div1, "class", "svelte-upcgw1");
-    			add_location(div1, file, 56, 4, 1721);
+    			add_location(div1, file, 65, 4, 1928);
     		},
     		m: function mount(target, anchor) {
     			mount_component(routinepane, target, anchor);
@@ -2438,14 +2439,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(54:2) {:else}",
+    		source: "(63:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (45:27) 
+    // (54:27) 
     function create_if_block_1(ctx) {
     	let routinesetpane;
     	let t0;
@@ -2492,12 +2493,12 @@ var app = (function () {
 
     			attr_dev(div0, "id", "spacer");
     			attr_dev(div0, "class", "svelte-upcgw1");
-    			add_location(div0, file, 46, 4, 1451);
+    			add_location(div0, file, 55, 4, 1658);
     			attr_dev(h2, "class", h2_class_value = "" + (/*colorClass*/ ctx[2] + " sectionTitle" + " svelte-upcgw1"));
-    			add_location(h2, file, 48, 6, 1506);
+    			add_location(h2, file, 57, 6, 1713);
     			attr_dev(div1, "id", "routineSkills");
     			attr_dev(div1, "class", "svelte-upcgw1");
-    			add_location(div1, file, 47, 4, 1475);
+    			add_location(div1, file, 56, 4, 1682);
     		},
     		m: function mount(target, anchor) {
     			mount_component(routinesetpane, target, anchor);
@@ -2586,14 +2587,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(45:27) ",
+    		source: "(54:27) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:2) {#if !routineFlag && !routineSetFlag}
+    // (52:2) {#if !routineFlag && !routineSetFlag}
     function create_if_block(ctx) {
     	let skillpane;
     	let current;
@@ -2634,14 +2635,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(43:2) {#if !routineFlag && !routineSetFlag}",
+    		source: "(52:2) {#if !routineFlag && !routineSetFlag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (59:6) {#each skill as skill}
+    // (68:6) {#each skill as skill}
     function create_each_block_1(ctx) {
     	let skillpane;
     	let current;
@@ -2682,14 +2683,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(59:6) {#each skill as skill}",
+    		source: "(68:6) {#each skill as skill}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:6) {#each skill as skill}
+    // (59:6) {#each skill as skill}
     function create_each_block(ctx) {
     	let routinepane;
     	let current;
@@ -2730,7 +2731,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(50:6) {#each skill as skill}",
+    		source: "(59:6) {#each skill as skill}",
     		ctx
     	});
 
@@ -2775,11 +2776,11 @@ var app = (function () {
     			t4 = space();
     			if_block.c();
     			attr_dev(h1, "class", "svelte-upcgw1");
-    			add_location(h1, file, 38, 2, 1198);
+    			add_location(h1, file, 47, 2, 1405);
     			attr_dev(p, "class", "svelte-upcgw1");
-    			add_location(p, file, 41, 2, 1271);
+    			add_location(p, file, 50, 2, 1478);
     			attr_dev(main, "class", "svelte-upcgw1");
-    			add_location(main, file, 37, 0, 1189);
+    			add_location(main, file, 46, 0, 1396);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2866,16 +2867,16 @@ var app = (function () {
     		const { curFIG, discipline } = event.detail; //event.detail stores the data in the event
 
     		if (curFIG.includes("{")) {
-    			$$invalidate(3, skill = curFIG.slice(1, curFIG.length - 1).split("} {").map(el => el.split(" ").map(el2 => new Skill(el2, discipline))));
+    			$$invalidate(3, skill = curFIG.slice(1, curFIG.length - 1).split("} {").replaceAll("—", "--").replaceAll("0", "-").map(el => el.split(" ").map(el2 => new Skill(el2, discipline))));
     			console.log(skill);
     			$$invalidate(0, routineFlag = false);
     			$$invalidate(1, routineSetFlag = true);
     		} else if (curFIG.split(" ").length == 1) {
-    			$$invalidate(3, skill = new Skill(curFIG, discipline));
+    			$$invalidate(3, skill = new Skill(curFIG.replaceAll("—", "--").replaceAll("0", "-"), discipline));
     			$$invalidate(0, routineFlag = false);
     			$$invalidate(1, routineSetFlag = false);
     		} else {
-    			$$invalidate(3, skill = curFIG.split(" ").map(el => new Skill(el, discipline)));
+    			$$invalidate(3, skill = curFIG.replaceAll("—", "--").replaceAll("0", "-").split(" ").map(el => new Skill(el, discipline)));
     			$$invalidate(0, routineFlag = true);
     			$$invalidate(1, routineSetFlag = false);
     		}

@@ -19,16 +19,25 @@
       skill = curFIG
         .slice(1, curFIG.length - 1)
         .split("} {")
+        .replaceAll("—", "--")
+        .replaceAll("0", "-")
         .map((el) => el.split(" ").map((el2) => new Skill(el2, discipline)));
       console.log(skill);
       routineFlag = false;
       routineSetFlag = true;
     } else if (curFIG.split(" ").length == 1) {
-      skill = new Skill(curFIG, discipline);
+      skill = new Skill(
+        curFIG.replaceAll("—", "--").replaceAll("0", "-"),
+        discipline
+      );
       routineFlag = false;
       routineSetFlag = false;
     } else {
-      skill = curFIG.split(" ").map((el) => new Skill(el, discipline));
+      skill = curFIG
+        .replaceAll("—", "--")
+        .replaceAll("0", "-")
+        .split(" ")
+        .map((el) => new Skill(el, discipline));
       routineFlag = true;
       routineSetFlag = false;
     }

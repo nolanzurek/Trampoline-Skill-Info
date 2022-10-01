@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher } from "svelte/internal";
+  import { createEventDispatcher, text } from "svelte/internal";
   import { discipline, disciplineToColor } from "./stores.js";
   import { get } from "svelte/store";
   const dispatch = createEventDispatcher();
