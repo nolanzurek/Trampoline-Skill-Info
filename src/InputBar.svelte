@@ -29,6 +29,10 @@
     <input
       type="text"
       id="FigIN"
+      autocorrect="off"
+      autocomplete="off"
+      autocapitalize="off"
+      spellcheck="false"
       bind:value={curFIG}
       on:keypress={newSkill}
       class={colorClass}
